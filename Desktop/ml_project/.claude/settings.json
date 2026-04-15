@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tasklist)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(taskkill /F /IM uvicorn.exe)",
+      "Bash(taskkill /F /PID 29296 /PID 44952 /PID 96752 /PID 47724 /PID 125288 /PID 61660 /PID 99736 /PID 20624 /PID 16540 /PID 84764 /PID 92988)",
+      "Bash(powershell -Command \"Remove-Item -Path ''C:\\\\Users\\\\PC\\\\Desktop\\\\ml_project\\\\apps\\\\web\\\\node_modules'' -Recurse -Force -ErrorAction SilentlyContinue; Remove-Item -Path ''C:\\\\Users\\\\PC\\\\Desktop\\\\ml_project\\\\apps\\\\web\\\\.next'' -Recurse -Force -ErrorAction SilentlyContinue; Write-Host ''node_modules cleared''\")",
+      "Bash(.venv/Scripts/python -c \"import app\")"
+    ]
+  }
+}
